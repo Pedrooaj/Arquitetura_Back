@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "./dist",                         // Os arquivos compilados vão para /dist
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true
+  },
+  "include": ["index.ts", "src"],                      // Inclui o index.ts na raiz
+  "exclude": ["node_modules", "dist"]
+}
