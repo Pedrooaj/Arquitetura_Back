@@ -24,7 +24,7 @@ class App {
   }
 
   private middlewares(): void {
-    this.application.use(express.static(path.join(__dirname, '..', 'public')));
+    this.application.use(express.static(path.join(process.cwd(), 'public')));
     this.application.use(express.json());
     this.application.use(cors({ origin: "*" }));
   }
