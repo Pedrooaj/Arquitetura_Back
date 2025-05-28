@@ -24,9 +24,9 @@ class App {
   }
 
   private middlewares(): void {
-    this.application.use('/uploads', express.static(path.join(__dirname, '..', 'public', 'uploads')))
+    this.application.use(express.static(path.join(__dirname, '..', 'public')));
     this.application.use(express.json());
-    this.application.use(cors({ origin: true }));
+    this.application.use(cors({ origin: "*" }));
   }
 
   private router(): void {
